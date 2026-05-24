@@ -32,7 +32,7 @@ export type TryOnResponse = {
 };
 
 const API_BASE =
-  process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:3002";
+  process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:3005";
 
 export async function fetchShades(): Promise<ShadeCatalog> {
   const response = await fetch(`${API_BASE}/api/shades`, { cache: "no-store" });

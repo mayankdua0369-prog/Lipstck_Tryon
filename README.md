@@ -24,10 +24,10 @@ lipstick_tryon/
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install -r requirements.txt
-uvicorn backend.app.main:app --reload --port 3002
+uvicorn backend.app.main:app --reload --port 3005
 ```
 
-API runs on `http://localhost:3002`.
+API runs on `http://localhost:3005`.
 
 ## Frontend
 
@@ -45,5 +45,5 @@ Frontend runs on `http://localhost:3000`.
 Set:
 
 ```bash
-NEXT_PUBLIC_API_BASE=http://localhost:3002
+NEXT_PUBLIC_API_BASE=http://localhost:3005
 ```
